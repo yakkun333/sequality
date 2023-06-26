@@ -17,4 +17,22 @@ public class AppTest {
         App classUnderTest = new App();
         assertEquals("Hello World!", classUnderTest.getGreeting());
     }
+
+    @Test
+        public void testAppSumAve1() {
+        App classUnderTest = new App();
+        assertEquals("Sum of " + 2 + " and " + 3 + " is " + 5 + ".Average is " + 2.5 + ".", classUnderTest.SumAve1(2,3));
+    }
+
+    @Test
+        public void testAppSumAve2() {
+        App classUnderTest = new App();
+        assertEquals("Sum of " + 1 + " to " + 10 + " is " + 55 + ".Average is " + 5.5 + ".", classUnderTest.SumAve2(1,10));
+    }
+
+    @Test
+        public void testAppSumAve3() {
+        App classUnderTest = new App();
+        assertEquals("Sum of odd of " + 1 + " to " + 10 + " is " + 25 + ".Sum of even is " + 30 + ".", classUnderTest.SumAve3(1,10));
+    }
 }
